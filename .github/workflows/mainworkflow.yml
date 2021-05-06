@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Random job
-        run: Am a Random job
+        run: echo Am a Random job
   deploy:
       runs-on: ubuntu-latest
       needs: build
