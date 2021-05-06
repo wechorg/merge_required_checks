@@ -26,11 +26,15 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Random job
-        run: echo Am a Random job
+        run: echo this will pass
   deploy:
       runs-on: ubuntu-latest
       needs: build
       steps:
         - run: echo First jobs passed
+        - name: Fail this job
+          run: exit 1
+          
+
 
 
